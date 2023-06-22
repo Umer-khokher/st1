@@ -3,10 +3,10 @@
 import Covid from './components/covid';
 import React from 'react';
 
-function App() {
+const App = () => {
   return (
     <>
-    <Covid/>
+    <Covid />
     </>
   );
 }
