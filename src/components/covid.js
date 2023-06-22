@@ -1,9 +1,12 @@
 import React, { useEffect } from "react";
+import axios from "axios";
 const Covid = () => {
   const getCovidData = async () => {
     try {
-      const res = await fetch("https://api.covid19india.org/data.json");
-      console.log(res);
+      const res = await axios.get(`https://api.covid19india.org/data.json`)
+      console.log(res.data)
+
+      // console.log(res);
     } catch (err) {
       console.log(err);
     }
